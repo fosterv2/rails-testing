@@ -2,7 +2,7 @@ require "application_system_test_case"
 
 class AuthorsTest < ApplicationSystemTestCase
   setup do
-    @author = authors(:one)
+    @author = authors(:rowling)
   end
 
   test "visiting the index" do

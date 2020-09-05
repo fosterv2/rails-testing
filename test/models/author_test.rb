@@ -11,10 +11,4 @@ class AuthorTest < ActiveSupport::TestCase
     author = Author.new(name: "J. K. Rowling", age: -10)
     assert_not author.save, "saved the author with a non-positive age"
   end
-
-  test "fixture returns data" do
-    assert_equal "J. K. Rowling", authors(:rowling).name
-
-    assert_equal authors(:rowling), books(:one).author
-  end
 end
