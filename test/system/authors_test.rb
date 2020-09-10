@@ -22,7 +22,7 @@ class AuthorsTest < ApplicationSystemTestCase
     click_on "Back"
   end
 
-  test "updating a Author" do
+  test "updating an Author" do
     visit authors_url
     click_on "Edit", match: :first
 
@@ -34,7 +34,7 @@ class AuthorsTest < ApplicationSystemTestCase
     click_on "Back"
   end
 
-  test "destroying a Author" do
+  test "destroying an Author" do
     visit authors_url
     page.accept_confirm do
       click_on "Destroy", match: :first
