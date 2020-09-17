@@ -4,6 +4,6 @@ harry:
   title: Harry Potter
   author: rowling
 
-two:
-  title: MyString
-  author_id: 1
+compass:
+  title: The Golden Compass
+  author: pullman

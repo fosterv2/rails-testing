@@ -10,12 +10,12 @@ class AuthorsTest < ApplicationSystemTestCase
     assert_selector "h1", text: "Authors"
   end
 
-  test "creating a Author" do
+  test "creating an Author" do
     visit authors_url
     click_on "New Author"
 
-    fill_in "Age", with: @author.age
-    fill_in "Name", with: @author.name
+    fill_in "Name", with: "Philip Pullman"
+    fill_in "Age", with: 73
     click_on "Create Author"
 
     assert_text "Author was successfully created"
@@ -26,8 +26,8 @@ class AuthorsTest < ApplicationSystemTestCase
     visit authors_url
     click_on "Edit", match: :first
 
-    fill_in "Age", with: @author.age
-    fill_in "Name", with: @author.name
+    fill_in "Age", with: 56
+    # fill_in "Name", with: @author.name
     click_on "Update Author"
 
     assert_text "Author was successfully updated"
