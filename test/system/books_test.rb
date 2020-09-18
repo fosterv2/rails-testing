@@ -15,7 +15,7 @@ class BooksTest < ApplicationSystemTestCase
     click_on "New Book"
 
     fill_in "Title", with: "Harry Potter and the Chamber of Secrets"
-    fill_in "Author", with: @book.author_id
+    select @book.author.name, from: "book[author_id]"
     click_on "Create Book"
 
     assert_text "Book was successfully created"

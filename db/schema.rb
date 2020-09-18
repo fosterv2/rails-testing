@@ -24,6 +24,8 @@ ActiveRecord::Schema.define(version: 2020_08_29_001104) do
     t.integer "author_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["author_id"], name: "index_books_on_author_id"
   end
 
+  add_foreign_key "books", "authors"
 end

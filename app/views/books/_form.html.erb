@@ -17,8 +17,8 @@
   </div>
 
   <div class="field">
-    <%= form.label :author_id %>
-    <%= form.number_field :author_id %>
+    <%= form.label :author %>
+    <%= form.collection_select :author_id, Author.all, :id, :name %>
   </div>
 
   <div class="actions">

@@ -1,9 +1,6 @@
 require 'test_helper'
 
 class AuthorTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
   test "should not save if validations fail" do
     author = Author.new
     assert_not author.save, "saved the author without a name"
